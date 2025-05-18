@@ -1,7 +1,7 @@
 import os
 import shutil
 from typing import Optional, Tuple, List
-from Lesson_7.file_management_package import BatchFileRenamer, FilePathParser
+from file_management_package import BatchFileRenamer, FilePathParser
 
 def _create_dummy_files(target_dir: str, files_to_create: List[str]):
     """Helper to create dummy files for testing."""

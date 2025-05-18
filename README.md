@@ -67,6 +67,13 @@ GeekBrains-Python-Immersion/
 │       ├── __init__.py
 │       ├── renaming.py
 │       └── parsing.py
+├── Lesson_8/
+│   ├── task_1_directory_serializer.py
+│   └── file_processing_suite/
+│       ├── __init__.py
+│       ├── directory_scanner.py
+│       ├── file_renamer.py
+│       └── path_parser.py
 ├── .gitignore
 └── README.md
 ```
@@ -109,6 +116,14 @@ GeekBrains-Python-Immersion/
     *   `__init__.py`: Exposes `FilePathParser` and `BatchFileRenamer`.
     *   [`renaming.py`](Lesson_7/file_management_package/renaming.py): Contains the `BatchFileRenamer` class for batch renaming of files with various criteria.
     *   [`parsing.py`](Lesson_7/file_management_package/parsing.py): Contains the `FilePathParser` class (originally from Lesson 5) for parsing file paths.
+
+### Lesson 8: Advanced File Operations and Packaging
+*   [`task_1_directory_serializer.py`](Lesson_8/task_1_directory_serializer.py): A script that utilizes the `DirectoryScanner` from the `file_processing_suite` to recursively scan a directory. It collects information about files and subdirectories (name, path, parent, type, size) and saves this data to JSON, CSV, and Pickle files. Includes a test mode with dummy directory creation and cleanup.
+*   `file_processing_suite/`: A comprehensive package for file and directory manipulation.
+    *   `__init__.py`: Exposes `DirectoryScanner`, `DirectoryEntry`, `FilePathParser`, and `BatchFileRenamer`.
+    *   [`directory_scanner.py`](Lesson_8/file_processing_suite/directory_scanner.py): Contains the `DirectoryScanner` class for directory traversal and data collection, and the `DirectoryEntry` TypedDict for structuring the data.
+    *   [`file_renamer.py`](Lesson_8/file_processing_suite/file_renamer.py): Contains the `BatchFileRenamer` class (migrated and enhanced from Lesson 7 concepts) for advanced batch file renaming.
+    *   [`path_parser.py`](Lesson_8/file_processing_suite/path_parser.py): Contains the `FilePathParser` class (migrated from Lesson 5 and Lesson 7) for parsing file path components.
 
 ---
 This README provides a general overview. For detailed information on each task, please refer to the source code and comments within the respective Python files.
